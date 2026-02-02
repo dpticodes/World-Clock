@@ -1,6 +1,64 @@
+body {
+  background-image: url("Images/worldclock.jpg");
+  background-size: cover; /* Scale image to cover */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: rgba(250, 249, 249, 0.8);
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+}
 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
   text-align: center;
+  margin-top: 0;
+}
+.city {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.6);
+}
+.city:last-child {
+  border: none;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 35px;
+}
+.date {
+  opacity: 0.6;
+  font-weight: 600;
+}
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 20px;
+  vertical-align: middle;
+  padding-right: 15px;
 }
 footer {
   text-align: center;
+  color: white;
+  font-weight: 400;
+}
+a {
+  color: white;
 }
