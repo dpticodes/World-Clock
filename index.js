@@ -18,6 +18,16 @@ function updateTime() {
 
   berlinDateElement.innerHTML = berlinTimeZone.format("MMMM Do YYYY");
   berlinTimeElement.innerHTML = `${berlinTimeZone.format("h:mm:ss [<small>]A[</small>]")}`;
+
+  //chicago//
+  let chicagoElement = document.querySelector("#chicago");
+  let chicagoDateElement = chicagoElement.querySelector(".date");
+  let chicagoTimeElement = chicagoElement.querySelector(".time");
+
+  let chicagoTimeZone = moment().tz("America/Chicago");
+
+  chicagoDateElement.innerHTML = chicagoTimeZone.format("MMMM Do YYYY");
+  chicagoTimeElement.innerHTML = `${chicagoTimeZone.format("h:mm:ss [<small>]A[</small>]")}`;
 }
 updateTime();
 setInterval(updateTime, 1000);
