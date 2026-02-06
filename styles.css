@@ -64,6 +64,11 @@ footer {
 a {
   color: white;
 }
+.back {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
 @media (max-width: 480px) {
   .container {
     margin: 20px;
